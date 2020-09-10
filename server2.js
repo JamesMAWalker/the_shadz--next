@@ -16,7 +16,7 @@ app.prepare().then(() => {
     return handle(req, res);
   })
 
-  server.listen(3030, err => {
+  server.listen(process.enve.PORT || 3030, err => {
     if (err) throw err;
     console.log('> Now serving THESHADZ on localhost 3030');
   })

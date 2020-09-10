@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport Link from 'next/link';\n\nfunction NavItem({\n  children,\n  route,\n  navPos\n}) {\n  return __jsx(Link, {\n    href: route\n  }, __jsx(\"a\", {\n    className: navPos\n  }, children));\n}\n\nexport default NavItem;","map":null,"metadata":{},"sourceType":"module"}

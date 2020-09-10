@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node server2.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server2.js"
+    "start": "NODE_ENV=production next start -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "author": "James Walker",
   "license": "ISC",
