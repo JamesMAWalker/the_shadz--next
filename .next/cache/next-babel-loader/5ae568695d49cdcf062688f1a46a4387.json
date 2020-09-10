@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\n\nfunction Collections(props) {\n  return __jsx(\"div\", null, __jsx(\"h1\", null, \"THE COLLECTIONS PAGE\"));\n}\n\nexport default Collections;\n\n__jsx(\"h1\", null, \"THE COLLECTIONS PAGE\");","map":null,"metadata":{},"sourceType":"module"}

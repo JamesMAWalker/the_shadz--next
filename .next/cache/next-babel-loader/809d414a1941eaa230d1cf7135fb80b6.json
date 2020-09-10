@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\n\nfunction NewsSignup(props) {\n  return __jsx(\"div\", null, __jsx(\"h1\", null, \"GETCHAH NEWWWWS HEAHHH\"));\n}\n\nexport default NewsSignup;","map":null,"metadata":{},"sourceType":"module"}

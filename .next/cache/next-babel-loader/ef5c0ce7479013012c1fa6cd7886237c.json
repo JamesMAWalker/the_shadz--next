@@ -1,1 +1,0 @@
-{"ast":null,"code":"export var prettyUrltoDBItem = function prettyUrltoDBItem(productName) {\n  var name = productName;\n\n  if (productName.includes('-')) {\n    name = productName.replace('-', ' ');\n  }\n\n  return name;\n};","map":null,"metadata":{},"sourceType":"module"}
