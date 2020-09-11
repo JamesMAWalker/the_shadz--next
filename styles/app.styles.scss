@@ -192,7 +192,7 @@ html {
     height: 15vh;
     width: 100vw;
     background-color: white;
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     border-bottom: 20px solid black;
     display: flex;
     justify-content: space-between;
@@ -208,12 +208,33 @@ html {
     }
 
     &__link {
+      position: relative;
       color: black;
       text-decoration: none;
       text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 1rem;
+      padding-bottom: 0;
+      z-index: 9;
 
       &:hover {
-        // border: 2px solid black;
+        color: white;
+
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        z-index: -1;
+        height: 100px;
+        width: 100%;
+        background-color: black;
+        opacity: 0;
       }
     }
 
@@ -227,7 +248,7 @@ html {
     }
 
     &__icon {
-
+      transform: scale(1.25);
     }
   }
 }

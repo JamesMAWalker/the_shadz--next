@@ -1,6 +1,10 @@
 import React from 'react';
 import NavItem from './nav-item.component';
 
+import InstaIcon from '../assets/icons/insta-icon.svg';
+import FBIcon from '../assets/icons/fb-icon.svg';
+import PinterestIcon from '../assets/icons/pinterest-icon.svg';
+
 
 const footerItems = [
   { name: 'newsletter', route: '/news-signup'},
@@ -20,10 +24,25 @@ function Footer(props) {
           </NavItem>
         ))}
       </div>
-      <div className="footer__icon-container">
-          <span className="footer__icon">PN</span>
-          <span className="footer__icon">IG</span>
-          <span className="footer__icon">FB</span>
+      <div className='footer__icon-container'>
+        <a
+          href='https://www.instagram.com/shadzsunglasses/'
+          className='footer__icon'
+        >
+          <InstaIcon />
+        </a>
+        <a
+          href='https://www.pinterest.com/pin/create/button/'
+          className='footer__icon'
+        >
+          <PinterestIcon />
+        </a>
+        <a
+          href='https://www.facebook.com/shadzsunglasses/'
+          className='footer__icon'
+        >
+          <FBIcon />
+        </a>
       </div>
     </footer>
   );
