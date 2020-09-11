@@ -5,9 +5,9 @@ import { v4 as uuid } from 'uuid';
 import { PRODUCT_DATA } from '../data/data-store';
 import { prettyUrltoDBItem } from '../utils/product.utils';
 
-import InstaIcon from '../assets/icons/Insta Icon.svg';
-import FBIcon from '../assets/icons/FB Icon.svg';
-import PinterestIcon from '../assets/icons/Vector.svg';
+import InstaIcon from '../assets/icons/insta-icon.svg';
+import FBIcon from '../assets/icons/fb-icon.svg';
+import PinterestIcon from '../assets/icons/pinterest-icon.svg';
 import HeartIcon from '../assets/icons/wishlist-icon.svg';
 
 function ProductSingle(props) {
