@@ -7,7 +7,11 @@ export const PRODUCT_DATA = [
       'https://res.cloudinary.com/jameswalker-work/image/upload/e_grayscale,f_auto,w_710/v1598350214/the_shadz/action-product/1-action_v1supz.jpg',
     ],
     price: '25.00',
-    colors: ['Black', 'Silver', 'Rose'],
+    colors: [
+      { name: 'Black', color: '#000' },
+      { name: 'Silver', color: '#afafaf' },
+      { name: 'Rose', color: '#ffbcd0' },
+    ],
     description:
       'How would we describe the Pilots?  We’d have to say: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     features: [
@@ -25,7 +29,11 @@ export const PRODUCT_DATA = [
       'https://res.cloudinary.com/jameswalker-work/image/upload/e_grayscale,f_auto,w_710/v1598350214/the_shadz/action-product/2-action_acohur.jpg',
     ],
     price: '25.00',
-    colors: ['Dark Tortoiseshell', 'Light Tortoiseshell', 'Black'],
+    colors: [
+      { name: 'Black', color: '#000' },
+      { name: 'Dark Tortoise Shell', color: '#50300b' },
+      { name: 'Light Tortoise Shell', color: '#886e35' },
+    ],
     description:
       'How would we describe the Marylin?  We’d have to say: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     features: [
@@ -43,7 +51,10 @@ export const PRODUCT_DATA = [
       'https://res.cloudinary.com/jameswalker-work/image/upload/e_grayscale,f_auto,w_710/v1598350214/the_shadz/action-product/3-action_kyti6y.jpg',
     ],
     price: '25.00',
-    colors: ['Dark Tortoiseshell', 'Black'],
+    colors: [
+      { name: 'Dark Tortoise Shell', color: '#50300b' },
+      { name: 'Black', color: '#000' },
+    ],
     description:
       'How would we describe the Clubmasters?  We’d have to say: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     features: [
@@ -61,7 +72,11 @@ export const PRODUCT_DATA = [
       'https://res.cloudinary.com/jameswalker-work/image/upload/e_grayscale,f_auto,w_710/v1598350215/the_shadz/action-product/4-action_dfsubo.jpg',
     ],
     price: '25.00',
-    colors: ['Silver', 'Black', 'Transparent'],
+    colors: [
+      { name: 'Silver', color: '#afafaf' },
+      { name: 'Black', color: '#000' },
+      { name: 'Clear', color: 'transparent' },
+    ],
     description:
       'How would we describe the Shield?  We’d have to say: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     features: [
@@ -79,7 +94,10 @@ export const PRODUCT_DATA = [
       'https://res.cloudinary.com/jameswalker-work/image/upload/e_grayscale,f_auto,w_710/v1598350215/the_shadz/action-product/5-action_xy0tov.jpg',
     ],
     price: '25.00',
-    colors: ['Violet', 'Rose'],
+    colors: [
+      { name: 'Violet', color: '#ee82ee' },
+      { name: 'Rose', color: '#ffbcd0' },
+    ],
     description:
       'How would we describe the Vintage?  We’d have to say: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     features: [
@@ -97,7 +115,10 @@ export const PRODUCT_DATA = [
       'https://res.cloudinary.com/jameswalker-work/image/upload/e_grayscale,f_auto,w_710/v1598350215/the_shadz/action-product/6-action_udcuyp.jpg',
     ],
     price: '25.00',
-    colors: ['Dark Tortoiseshell', 'Black'],
+    colors: [
+      { name: 'Dark Tortoise Shell', color: '#50300b' },
+      { name: 'Black', color: '#000' },
+    ],
     description:
       'How would we describe the Lorena?  We’d have to say: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     features: [
@@ -115,7 +136,10 @@ export const PRODUCT_DATA = [
       'assets/products/product-action/7-action.jpeg',
     ],
     price: '25.00',
-    colors: ['Violet', 'Blue'],
+    colors: [
+      { name: 'Violet', color: '#ee82ee' },
+      { name: 'Blue', color: '#3973b6' },
+    ],
     description:
       'How would we describe the Spring?  We’d have to say: consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     features: [

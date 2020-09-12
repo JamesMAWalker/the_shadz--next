@@ -12,7 +12,7 @@ body {
   text-transform: lowercase;
   
   ::-webkit-scrollbar {
-    background-color: red;
+    background-color: #3973b6;
     display: none;
   }
 }
@@ -73,6 +73,15 @@ html {
       align-items: center;
       justify-content: space-evenly;
       width: 15%;
+      padding: 1rem;
+
+      & > * {
+        fill: none;
+        stroke: transparent;
+        stroke-width: 20px;
+        // stroke-dasharray: 2,2;
+        // stroke-linejoin: round;
+      }
 
       a {
         text-decoration: none;
@@ -408,9 +417,14 @@ html {
     height: 15px;
     width: 10%;
     letter-spacing: 1px;
-
+    
     .crumb {
       color: lightgrey;
+      
+      a {
+        color: lightgrey;
+        text-decoration: none;
+      }
 
       &--active {
         color: black;
@@ -462,7 +476,7 @@ html {
     height: 100px;
     width: 40%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
 
     .color-container {
@@ -473,10 +487,14 @@ html {
       flex-wrap: wrap;
       flex-flow: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
+      border: 1px solid transparent;
+      cursor: pointer;
 
       &--active {
-        border: 1px solid rgb(70, 70, 70);
+        // border: 1px solid rgb(70, 70, 70);
+        border-bottom: 1px solid rgba(70, 70, 70, .4);
+        border-top: 1px solid rgba(70, 70, 70, .4);
       }
 
       .color-name {
@@ -596,7 +614,7 @@ html {
 //////////-INSTA PAGE-//////////
 
 .shop-insta {
-  width: 100%;
+  width: 75%;
   min-height: 80vh;
   height: max-content;
   position: relative;
@@ -635,11 +653,11 @@ html {
   .insta-grid {
     // height: 100%;
     padding-top: 3rem;
-    width: calc(100% - 3px);
+    width: calc(100% - 20px);
     display: grid;
     grid-template-rows: repeat(3, 250px);
     grid-template-columns: repeat(4, 25%);
-    gap: 1px;
+    gap: 5px;
   }
 
   .insta-photo {

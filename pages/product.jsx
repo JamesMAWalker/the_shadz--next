@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter, useRouter } from 'next/router';
+import Link from 'next/link';
 import { v4 as uuid } from 'uuid';
 
 import { PRODUCT_DATA } from '../data/data-store';
@@ -13,6 +14,7 @@ import HeartIcon from '../assets/icons/wishlist-icon.svg';
 function ProductSingle(props) {
   const [currProduct, setCurrProduct] = useState(PRODUCT_DATA[0])
   const [crumbs, setCrumbs] = useState(['', '', '']) 
+  const [selectedColor, setSelectedColor] = useState('');
   
   useEffect(() => {
     let pageQuery = window.location.pathname.split('/').pop();
@@ -23,15 +25,18 @@ function ProductSingle(props) {
     setCurrProduct(currItem)
     setCrumbs(pathQuery)  
 
-    console.log(crumbs);
   }, [])
+
+  const handleSelect = (e) => {
+    setSelectedColor(e.currentTarget.id)
+  }
 
 
   return (
     <div className='single-product'>
       <div className='bread-crumbs'>
         {crumbs.slice(0, 2).map((c) => (
-          <span className='crumb'>&nbsp;{c}&nbsp;//</span>
+          <span className='crumb'>&nbsp;<Link href={`/${c}`}><a>{c}</a></Link>&nbsp;//</span>
         ))}
         <span className='crumb--active'>&nbsp;{currProduct.productName}</span>
       </div>
@@ -58,19 +63,13 @@ function ProductSingle(props) {
         </div>
         <div className='single-product__color-choices'>
           {currProduct.colors.map((c) => {
-            let colorName = c;
-            let colorBlock = c;
+            let colorName = c.name;
+            let colorBlock = c.color;
 
-            if (c === 'Transparent') {
-              colorName = 'Clear';
-            }
-
-            if (c === 'Rose') {
-              colorBlock = 'Pink';
-            }
+            let isActive = colorName === selectedColor ? 'color-container--active' : ''; 
 
             return (
-              <div className='color-container' key={uuid()}>
+              <div id={c.name} className={`color-container ${isActive}`} onClick={handleSelect} key={uuid()}>
                 <span className='color-name'>{colorName}</span>
                 <span
                   style={{ backgroundColor: `${colorBlock}` }}
