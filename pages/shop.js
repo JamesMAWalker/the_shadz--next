@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { v4 as uuid } from 'uuid';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import { PRODUCT_DATA } from '../data/data-store';
 
@@ -19,11 +20,11 @@ const ShopPage = (props) => {
   return (
     <div className='shop'>
       {products.map((p) => (
-        <ListItem 
+        <ListItem
           key={uuid()}
-          photos={p.productphotos} 
+          photos={p.productphotos}
           name={p.productName}
-          price={p.price}  
+          price={p.price}
         />
       ))}
     </div>
