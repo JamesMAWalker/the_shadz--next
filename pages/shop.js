@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { v4 as uuid } from 'uuid';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import { PRODUCT_DATA } from '../data/data-store';
 

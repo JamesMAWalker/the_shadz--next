@@ -79,6 +79,7 @@ function ProductSingle(props) {
             );
           })}
         </div>
+        <button className='add-cart' >add to cart</button>
         <div className='single-product__insta-container'>
           {currProduct.productphotos.map((p) => (
             <span

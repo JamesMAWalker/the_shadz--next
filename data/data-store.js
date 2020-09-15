@@ -132,8 +132,8 @@ export const PRODUCT_DATA = [
     productName: 'Spring',
     productCategory: 'Round',
     productphotos: [
-      'assets/products/product-thumbs/7-plain.jpg',
-      'assets/products/product-action/7-action.jpeg',
+      '/product-thumbs/7-plain.jpg',
+      '/product-action/7-action.jpg',
     ],
     price: '25.00',
     colors: [
@@ -153,8 +153,8 @@ export const PRODUCT_DATA = [
     productName: 'Slim Shade',
     productCategory: 'Shield',
     productphotos: [
-      'assets/products/product-thumbs/8-plain.jpg',
-      'assets/products/product-action/8-action.jpeg',
+      '/product-thumbs/8-plain.jpg',
+      '/product-action/8-action.jpg',
     ],
     price: '25.00',
     colors: ['Transparent', 'Black', 'Dark Tortoiseshell'],
@@ -171,8 +171,8 @@ export const PRODUCT_DATA = [
     productName: 'Belissima',
     productCategory: 'Round',
     productphotos: [
-      'assets/products/product-thumbs/9-plain.jpg',
-      'assets/products/product-action/9-action.jpeg',
+      '/product-thumbs/9-plain.jpg',
+      '/product-action/9-action.jpg',
     ],
     price: '25.00',
     colors: ['Black'],
@@ -189,8 +189,8 @@ export const PRODUCT_DATA = [
     productName: 'Jackie // Square',
     productCategory: 'Square',
     productphotos: [
-      'assets/products/product-thumbs/10-plain.jpg',
-      'assets/products/product-action/10-action.jpeg',
+      '/product-thumbs/10-plain.jpg',
+      '/product-action/10-action.jpg',
     ],
     price: '25.00',
     colors: ['Black', 'Dark Tortoiseshell'],
@@ -207,8 +207,8 @@ export const PRODUCT_DATA = [
     productName: 'Catherine',
     productCategory: 'Square',
     productphotos: [
-      'assets/products/product-thumbs/11-plain.jpg',
-      'assets/products/product-action/11-action.jpeg',
+      '/product-thumbs/11-plain.jpg',
+      '/product-action/11-action.jpg',
     ],
     price: '25.00',
     colors: ['Black', 'Dark Tortoiseshell', 'Tortoiseshell Fade'],
@@ -225,8 +225,8 @@ export const PRODUCT_DATA = [
     productName: 'Rasoir',
     productCategory: 'Round',
     productphotos: [
-      'assets/products/product-thumbs/12-plain.jpg',
-      'assets/products/product-action/12-action.jpeg',
+      '/product-thumbs/12-plain.jpg',
+      '/product-action/12-action.jpg',
     ],
     price: '25.00',
     colors: ['Black', 'Dark Tortoiseshell'],
@@ -243,8 +243,8 @@ export const PRODUCT_DATA = [
     productName: 'Kate',
     productCategory: 'Cateye',
     productphotos: [
-      'assets/products/product-thumbs/15-plain.jpg',
-      'assets/products/product-action/15-action.jpeg',
+      '/product-thumbs/16-plain.jpg',
+      '/product-action/15-action.jpg',
     ],
     price: '25.00',
     colors: [
@@ -276,8 +276,8 @@ export const PRODUCT_DATA = [
     productName: 'Razor',
     productCategory: 'Cateye',
     productphotos: [
-      'assets/products/product-thumbs/15-plain.jpg',
-      'assets/products/product-action/15-action.jpeg',
+      '/product-thumbs/15-plain.jpg',
+      '/product-action/15-action.jpg',
     ],
     price: '25.00',
     colors: [

@@ -12,6 +12,10 @@ app.prepare().then(() => {
     app.render(req, res, "/product", { name: req.params.name })
   })
 
+  server.get('/collections/:name', (req, res) => {
+    app.render(req, res, "/collections", { name: req.params.name })
+  })
+
   server.get('*', (req, res) => {
     return handle(req, res);
   })
